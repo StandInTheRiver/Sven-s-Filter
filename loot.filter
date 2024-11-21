@@ -3,92 +3,6 @@
 //Show item descriptions for high stat rolls on rares and blues
 //show drop notifications for items
 
-
-
-ItemDisplayFilterName[]: hide bad magic gear (magic helm/chest/gloves/belt/boots/shields/weapons excluding zon bow/jav/circlet) //1
-ItemDisplayFilterName[]: hide bad rare gear (helms/belt/weapons excluding zonbow/jav/circlet/throwing/tippedmace) //2
-ItemDisplayFilterName[]: hide normal set/unique //3
-ItemDisplayFilterName[]: hide non-eth non sup bases And all magic gear //4
-ItemDisplayFilterName[]: hide rare chest/gloves/boots/zonbow/jav/throwing/tippedmace/ wands/scepter/staff bases //5
-//Show info about current Filter Level in description of Horadric Cube
-ItemDisplay[box]:%NAME%%CONTINUE%
-ItemDisplay[box FILTLVL=0]: %NAME%
-ItemDisplay[box FILTLVL=1]: %NAME%
-ItemDisplay[box FILTLVL=2]: %NAME%
-ItemDisplay[box FILTLVL=3]: %NAME%
-ItemDisplay[box FILTLVL=4]: %NAME%
-
-
-/////Global settings
-ItemDisplay[]:%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[]:%NAME%{%WHITE%Item Level: %ILVL%}%CONTINUE%
-ItemDisplay[]:%NAME%{%WHITE%%NAME%, Affix Level: %ALVL%}%CONTINUE%
-
-
-//Original colors
-ItemDisplay[!ID UNI]:%GOLD%%CONTINUE%
-ItemDisplay[ID UNI]:%GOLD%%NAME%%CONTINUE%
-ItemDisplay[!ID SET]:%GREEN%%CONTINUE%
-ItemDisplay[ID SET]:%GREEN%%NAME%%CONTINUE%
-ItemDisplay[!ID RARE]:%YELLOW%%NAME%%CONTINUE%
-ItemDisplay[ID RARE]:%YELLOW%%NAME%%CONTINUE%
-ItemDisplay[!ID MAG]:%BLUE%%NAME%%CONTINUE%
-ItemDisplay[ID MAG]:%BLUE%%NAME%%CONTINUE%
-ItemDisplay[CRAFT]:%ORANGE%%NAME%%CONTINUE%
-
-
-
-ItemDisplay[NMAG (BELT OR GLOVES OR BOOTS)]://
-ItemDisplay[DIN NMAG (NORM OR EXC)]://
-ItemDisplay[DIN NMAG !RW (SOCK=1 OR SOCK=2)]://
-
-ItemDisplay[NMAG (NORM OR EXC) !STAFF !WAND !SCEPTER !RW AND !SUP !ETH !NEC FILTLVL>1]://Hide non-elite bases excepttions
-
-ItemDisplay[NMAG (NORM OR EXC) !CLASS !RW !WAND !SCEPTER !STAFF]://
-ItemDisplay[NMAG (NORM OR EXC) DIN]://
-ItemDisplay[NMAG INF DIN]://
-
-
-
-//prepending
-ItemDisplay[ETH]:%GRAY%[eth]%NAME%%CONTINUE%
-//Add PURPLE "*" Stars on Corrupted items in Unique Stygian Caverns Map
-ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv OR rin OR amu)) (MAG OR RARE OR SET OR UNI OR CRAFT) !ID (MAPID=181 OR MAPID=182)]: %PURPLE%*%NAME%%PURPLE%*%CONTINUE%
-//show item sockets and etheral and corruptions in map
-ItemDisplay[NMAG (WEAPON OR ARMOR) SOCK=0]:%WHITE%%NAME%%CONTINUE%
-ItemDisplay[NMAG (WEAPON OR ARMOR) SOCK>0]:%WHITE%%NAME%%WHITE%[%YELLOW%%SOCKETS%os%WHITE%]%CONTINUE%
-
-//misc
-
-ItemDisplay[leg]:%NAME%//writs leg
-ItemDisplay[ear]:%NAME%//ear
-ItemDisplay[jewf]:%ORANGE%Jewel Fragment%WHITE%(x %QTY%){%GRAY%(Stackable Jewel)%CL%%TAN%Note%WHITE%: Use Those in Cube Recipes}
-
-/quest items
-ItemDisplay[bks]:%NAME%
-ItemDisplay[bkd]:%NAME%
-ItemDisplay[tr1]:%NAME%
-ItemDisplay[ass]:%NAME%
-ItemDisplay[box]:%NAME%
-ItemDisplay[j34]:%NAME%
-ItemDisplay[g34]:%NAME%
-ItemDisplay[xyz]:%NAME%
-ItemDisplay[bbb]:%NAME%
-ItemDisplay[qbr]:%NAME%
-ItemDisplay[qey]:%NAME%
-ItemDisplay[qhr]:%NAME%
-ItemDisplay[mss]:%NAME%
-ItemDisplay[ice]:%NAME%
-ItemDisplay[tr2]:%NAME%
-ItemDisplay[hdm]:%NAME%
-ItemDisplay[msf]:%NAME%
-ItemDisplay[vip]:%NAME%
-ItemDisplay[hst]:%NAME%
-ItemDisplay[g33]:%NAME%
-ItemDisplay[qf1]:%NAME%
-ItemDisplay[qf2]:%NAME%
-ItemDisplay[hfh]:%NAME%
-
 //Show Item Names On Gambling Gheeds Event
 ItemDisplay[NMAG !ID SHOP MAPID>132]: %WHITE%But Thankfully %RED%Gheeds Event is an Exception %WHITE%to this Rule%CL%%GRAY%Second Roll of the same Unique will result as %YELLOW%Rare %GRAY%Item%CL%%TAN%Note%WHITE%: Normally Uniques %RED%can't %WHITE%roll twice in the same game!%CL%%CL%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP amu MAPID>132]: %NAME%%GOLD%Rising Sun, Saracen's Chance, Seraph's Hymn%CL%Mara's Kaleidoscope, Metalgrid, Nokozan Relic, %CL%Eye of Etlich, Highlord's Wrath, Mahim-Oak Curio,%CL%Atma's Scarab, Cat's Eye, Crescent Moon,%CL%%WHITE%List of Amulets:%CONTINUE%
@@ -262,6 +176,92 @@ ItemDisplay[NMAG !ID SHOP bwn MAPID>132]: %NAME%%GOLD%Boneshade%CL%%WHITE%Elite 
 ItemDisplay[NMAG !ID SHOP gwn MAPID>132]: %NAME%%GOLD%Death's Web%CL%%WHITE%Elite Tier:%CL%%CL%%GOLD%Blackhand Key%CL%%WHITE%Exceptional Tier:%CL%%CL%%GOLD%Ume's Lament%CL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP MAPID>132]: %NAME%%CL%%CL%%TAN%Note%WHITE%: Possible Uniques:
 
+ItemDisplayFilterName[]: hide bad magic gear (magic helm/chest/gloves/belt/boots/shields/weapons excluding zon bow/jav/circlet) //1
+ItemDisplayFilterName[]: hide bad rare gear (helms/belt/weapons excluding zonbow/jav/circlet/throwing/tippedmace) //2
+ItemDisplayFilterName[]: hide normal set/unique //3
+ItemDisplayFilterName[]: hide non-eth non sup bases And all magic gear //4
+ItemDisplayFilterName[]: hide rare chest/gloves/boots/zonbow/jav/throwing/tippedmace/ wands/scepter/staff bases //5
+//Show info about current Filter Level in description of Horadric Cube
+ItemDisplay[box]:%NAME%%CONTINUE%
+ItemDisplay[box FILTLVL=0]: %NAME%
+ItemDisplay[box FILTLVL=1]: %NAME%
+ItemDisplay[box FILTLVL=2]: %NAME%
+ItemDisplay[box FILTLVL=3]: %NAME%
+ItemDisplay[box FILTLVL=4]: %NAME%
+
+
+/////Global settings
+ItemDisplay[]:%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[]:%NAME%{%WHITE%Item Level: %ILVL%}%CONTINUE%
+ItemDisplay[]:%NAME%{%WHITE%%NAME%, Affix Level: %ALVL%}%CONTINUE%
+
+
+//Original colors
+ItemDisplay[!ID UNI]:%GOLD%%CONTINUE%
+ItemDisplay[ID UNI]:%GOLD%%NAME%%CONTINUE%
+ItemDisplay[!ID SET]:%GREEN%%CONTINUE%
+ItemDisplay[ID SET]:%GREEN%%NAME%%CONTINUE%
+ItemDisplay[!ID RARE]:%YELLOW%%NAME%%CONTINUE%
+ItemDisplay[ID RARE]:%YELLOW%%NAME%%CONTINUE%
+ItemDisplay[!ID MAG]:%BLUE%%NAME%%CONTINUE%
+ItemDisplay[ID MAG]:%BLUE%%NAME%%CONTINUE%
+ItemDisplay[CRAFT]:%ORANGE%%NAME%%CONTINUE%
+
+
+
+ItemDisplay[NMAG (BELT OR GLOVES OR BOOTS)]://
+ItemDisplay[DIN NMAG (NORM OR EXC)]://
+ItemDisplay[DIN NMAG !RW (SOCK=1 OR SOCK=2)]://
+
+ItemDisplay[NMAG (NORM OR EXC) !STAFF !WAND !SCEPTER !RW AND !SUP !ETH !NEC FILTLVL>1]://Hide non-elite bases excepttions
+
+ItemDisplay[NMAG (NORM OR EXC) !CLASS !RW !WAND !SCEPTER !STAFF]://
+ItemDisplay[NMAG (NORM OR EXC) DIN]://
+ItemDisplay[NMAG INF DIN]://
+
+
+
+//prepending
+ItemDisplay[ETH]:%GRAY%[eth]%NAME%%CONTINUE%
+//Add PURPLE "*" Stars on Corrupted items in Unique Stygian Caverns Map
+ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv OR rin OR amu)) (MAG OR RARE OR SET OR UNI OR CRAFT) !ID (MAPID=181 OR MAPID=182)]: %PURPLE%*%NAME%%PURPLE%*%CONTINUE%
+//show item sockets and etheral and corruptions in map
+ItemDisplay[NMAG (WEAPON OR ARMOR) SOCK=0]:%WHITE%%NAME%%CONTINUE%
+ItemDisplay[NMAG (WEAPON OR ARMOR) SOCK>0]:%WHITE%%NAME%%WHITE%[%YELLOW%%SOCKETS%os%WHITE%]%CONTINUE%
+
+//misc
+
+ItemDisplay[leg]:%NAME%//writs leg
+ItemDisplay[ear]:%NAME%//ear
+ItemDisplay[jewf]:%ORANGE%Jewel Fragment%WHITE%(x %QTY%){%GRAY%(Stackable Jewel)%CL%%TAN%Note%WHITE%: Use Those in Cube Recipes}
+
+/quest items
+ItemDisplay[bks]:%NAME%
+ItemDisplay[bkd]:%NAME%
+ItemDisplay[tr1]:%NAME%
+ItemDisplay[ass]:%NAME%
+ItemDisplay[box]:%NAME%
+ItemDisplay[j34]:%NAME%
+ItemDisplay[g34]:%NAME%
+ItemDisplay[xyz]:%NAME%
+ItemDisplay[bbb]:%NAME%
+ItemDisplay[qbr]:%NAME%
+ItemDisplay[qey]:%NAME%
+ItemDisplay[qhr]:%NAME%
+ItemDisplay[mss]:%NAME%
+ItemDisplay[ice]:%NAME%
+ItemDisplay[tr2]:%NAME%
+ItemDisplay[hdm]:%NAME%
+ItemDisplay[msf]:%NAME%
+ItemDisplay[vip]:%NAME%
+ItemDisplay[hst]:%NAME%
+ItemDisplay[g33]:%NAME%
+ItemDisplay[qf1]:%NAME%
+ItemDisplay[qf2]:%NAME%
+ItemDisplay[hfh]:%NAME%
+
+
+
 
 //////BASES
 ItemDisplay[SUP !GLOVES !BOOTS !BELT !EXC !NORM !(HELM SOCK=2) !(2H SOCK=2) !(uts OR uow OR ush OR upk OR urg OR uml OR uuc) ED=15]:%RED%Perf[15%]%NAME%%MAP-55%%CONTINUE%
@@ -363,7 +363,7 @@ ItemDisplay[t35]:%PURPLE%o %WHITE%(%RED%t3%WHITE%)%PURPLE%Blood Moon Map%WHITE%(
 ItemDisplay[t36]:%WHITE%(%YELLOW%t1%WHITE%)%ORANGE%Fall of Caldeum Map%WHITE%(x %QTY%){%WHITE%Immunes: %BLUE%130% %YELLOW%100%%CL%%NAME%} %MAP-0B%%CONTINUE%
 ItemDisplay[t37]:%WHITE%(%RED%t3%WHITE%)%ORANGE%Pandemonium Citadel Map%WHITE%(x %QTY%){%WHITE%Immunes: %YELLOW%135% %GREEN%130% %GOLD%100%%CL%%NAME%} %MAP-0B%%CONTINUE%
 ItemDisplay[t38]:%WHITE%(%RED%t3%WHITE%)%ORANGE%Canyon of Sescheron Map%WHITE%(x %QTY%){%WHITE%Immunes: %RED%130% %GREEN%110% %GOLD%120%%CL%%NAME%} %MAP-0B%%CONTINUE%
-ItemDisplay[t39]:%WHITE%(%RED%t3%WHITE%)%ORANGE%Kehjistan Marketplace Map%WHITE%(x %QTY%){%WHITE%Immunes: %NAME%{%WHITE%Immunes: %RED%125% %BLUE%130% %GREEN%110% %GRAY%(%WHITE%Fire Tower: %GREEN%1000%%GRAY%)%CL%%NAME%} %MAP-0B%%CONTINUE%
+ItemDisplay[t39]:%WHITE%(%RED%t3%WHITE%)%ORANGE%Kehjistan Marketplace Map%WHITE%(x %QTY%){%WHITE%Immunes: %RED%125% %BLUE%130% %GREEN%110% %GRAY%(%WHITE%Fire Tower: %GREEN%1000%%GRAY%)%CL%%NAME%} %MAP-0B%%CONTINUE%
 ItemDisplay[t3a]:%WHITE%(%RED%t3%WHITE%)%ORANGE%Ashen Plains Map%WHITE%(x %QTY%){%WHITE%Immunes: %BLUE%130% %GREEN%130% %ORANGE%120%%CL%%NAME%} %MAP-0B%%CONTINUE%
 ItemDisplay[(t41 OR t42 OR t43)]:%ORANGE%%NAME%{%WHITE%Immunes: %PURPLE%All %WHITE%Type%NAME%} %MAP-0B%%CONTINUE%
 ItemDisplay[t41]:%WHITE%(%BLACK%t4%WHITE%)%PURPLE%Cathedral of Light Dungeon%WHITE%(x %QTY%) %MAP-0B%%CONTINUE%
@@ -1100,7 +1100,7 @@ ItemDisplay[!ID UNI 7pa]:%NAME%%RED%O ³%GOLD%Tomb Reaver %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7wc]:%NAME%%RED%O ³%GOLD%Stormspire %RED%O%CONTINUE%
 //bows
 ItemDisplay[!ID UNI 6l7]:%NAME%%RED%O ³%GOLD%Eaglehorn %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6sw]:%NAME%%RED%O ³%GOLD%Widowmaker %RED%O%CONTINUE% %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 6sw]:%NAME%%RED%O ³%GOLD%Widowmaker %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 6lw]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Windforce %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 //crossbows
 ItemDisplay[!ID UNI 6hx]:%NAME%%RED%O ³%GOLD%Hellrack %RED%O%CONTINUE%
@@ -1766,7 +1766,7 @@ ItemDisplay[STAT118=1 !EQUIPPED]: %NAME%{%TAN%Note%WHITE%: 2 x %BLUE%HFD %WHITE%
 ItemDisplay[(CHARSTAT118=1 AND CHARSTAT153=0) STAT118=1 EQUIPPED]: %NAME%{%TAN%Note%WHITE%: (%CHARSTAT118%/2 %BLUE%HFD%WHITE%) = %GRAY%Cannot Be Frozen %WHITE%Inactive%CL%%NAME%}%CONTINUE%
 ItemDisplay[(CHARSTAT118>1 AND CHARSTAT153=0) STAT118=1 EQUIPPED]: %NAME%{%TAN%Note%WHITE%: (%CHARSTAT118%/2 %BLUE%HFD%WHITE%) = %BLUE%Cannot Be Frozen %WHITE%Activated%CL%%NAME%}%CONTINUE%
 //Equipped with other CBF source
-ItemDisplay[CHARSTAT153>0 STAT118=1 EQUIPPED]: %NAME%{%TAN%Note%WHITE%: %BLUE%Cannot Be 
+ItemDisplay[CHARSTAT153>0 STAT118=1 EQUIPPED]: %NAME%{%TAN%Note%WHITE%: %BLUE%Cannot Be Frozen}
 
 
 //show skills on items
@@ -2996,9 +2996,9 @@ ItemDisplay[ETH MAG GLOVES FILTLVL>0]://hide eth gloves
 
 //hide bad magic items and rares
 ItemDisplay[MAG ARMOR !(CIRC) !ID FILTLVL>0]:// 
-ItemDisplay[MAG WEAPON !(ZON) !ID FILTLVL>0]://
+ItemDisplay[MAG WEAPON !(ZON) !(ETH 2H SWORD) !ID FILTLVL>0]://
 ItemDisplay[RARE ARMOR !(CIRC OR CHEST OR GLOVES OR BOOTS) !ID FILTLVL>1]:// 
-ItemDisplay[RARE WEAPON !(ZON OR TMACE OR THROWING OR SIN) !ID FILTLVL>1]://  
+ItemDisplay[RARE WEAPON !(ZON OR TMACE OR THROWING OR SIN) !(ETH 2H SWORD)  !ID FILTLVL>1]://  
 
 
 
@@ -3028,11 +3028,11 @@ ItemDisplay[NMAG (DRU OR BAR OR ZON) AND (NORM OR EXC) !RW !ETH FILTLVL>4]://
 ItemDisplay[RARE ARMOR !CIRC !ID FILTLVL>4]://
 ItemDIsplay[RARE WEAPON !ID FILTLVL>4]://
 ItemDisplay[MAG ARMOR !ID  FILTLVL>4]://
-ItemDisplay[MAG WEAPON !ID FILTLVL>4]://
+ItemDisplay[MAG WEAPON !(ETH 2H SWORD) !ID FILTLVL>4]://
 ItemDisplay[RARE (SOR OR ZON OR WAND) !ID FILTLVL>4]://
 ItemDisplay[NMAG (SOR OR WAND OR SCEPTER) FILTLVL>3]://
-ItemDisplay[RARE (aqv OR cqv) !ID FILTLVL>1]://
-ItemDisplay[MAG (aqv OR cqv) !ID FILTLVL>1]://
+ItemDisplay[RARE (aqv OR cqv) !AMAZON !ID FILTLVL>1]://
+ItemDisplay[MAG (aqv OR cqv) !AMAZON !ID FILTLVL>1]://
 ItemDisplay[NMAG THROWING]://
 ItemDisplay[NMAG HELM SOCK=2]://
 ItemDisplay[NMAG STAFF (SOCK=3 OR SOCK=2)]://
@@ -3054,10 +3054,11 @@ ItemDisplay[NMAG (7bl OR 9bl OR bld OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg)]:
 ItemDisplay[NMAG XBOW]://
 ItemDisplay[NMAG BOW !ZON]://
 ItemDisplay[NMAG (7ha OR 7ax OR 72a OR 7mp OR 7la OR 7ba OR 7bt OR 7ga OR 7gi OR 9ha OR 9ax OR 92a OR 9mp OR 9wa OR 9la OR 9ba OR 9bt OR 9ga OR 9gi OR gix OR gax OR btx OR bax OR lax OR wax OR mpi OR 2ax OR axe OR hax OR)]://
-ItemDisplay[NMAG (uts OR uow OR ush OR upk OR urg OR uml OR uuc)]://
+ItemDisplay[NMAG (uts OR ush OR upk OR urg OR uml OR uuc)]://
 ItemDisplay[NMAG (NORM OR EXC) SHIELD]://
 ItemDisplay[MAG ZON !ELT !ID]://
 ItemDisplay[NMAG ARMOR SOCK=2]://
 
 //
 ItemDisplay[RW]:%NAME%{%NAME%}%CONTINUE% //show runewords
+
