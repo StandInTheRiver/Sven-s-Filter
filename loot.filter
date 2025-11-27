@@ -688,6 +688,8 @@ ItemDisplay[r03]:%ORANGE%o Tir Rune %ORANGE%o%CONTINUE%
 ItemDisplay[r04]:%ORANGE%o Nef Rune %ORANGE%o%CONTINUE%
 ItemDisplay[r05]:%ORANGE%o Eth Rune %ORANGE%o%CONTINUE%
 ItemDisplay[r06]:%ORANGE%o Ith Rune %ORANGE%o%CONTINUE%
+
+
 ItemDisplay[r07]:%ORANGE%o Tal Rune %ORANGE%o%CONTINUE%
 ItemDisplay[r08]:%ORANGE%o Ral Rune %ORANGE%o%CONTINUE%
 ItemDisplay[r09]:%ORANGE%o Ort Rune %ORANGE%o%CONTINUE%
@@ -1164,8 +1166,7 @@ ItemDisplay[NMAG cqv3]:%WHITE%³War Bolts%WHITE%[%YELLOW%%SOCKETS%os%WHITE%]{%NAM
 //hide
 ItemDisplay[NMAG (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3) (SOCK=0 OR SOCK=1) CLVL>5]://
 ItemDisplay[NMAG (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3) FILTLVL>1]://
-ItemDisplay[NMAG (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3) CLVL>35
-]://
+ItemDisplay[NMAG (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3) CLVL>35]://
 
 //weapons
 //axes
