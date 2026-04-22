@@ -960,7 +960,7 @@ ItemDisplay[lsvl]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  V
 ItemDisplay[llmr]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  Lilith's Mirror %RED%  o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 
 //dclone items
-ItemDisplay[!ID UNI uhl]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Sage's Defiance %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
+ItemDisplay[!ID UNI uh9 MAPID=137]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Overlord %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 ItemDisplay[!ID UNI rar]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Nick Cage %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 ItemDisplay[!ID UNI uth]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Dark Abyss %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 ItemDisplay[!ID UNI utb]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Ithereal %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
@@ -1682,10 +1682,11 @@ ItemDisplay[!ID SET ci3]:%NAME%%RED%O ³%GREEN%M'avina's helm %RED%O%CONTINUE%
 ItemDisplay[!ID UNI uap]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Harlequin Crest %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI ulm]:%NAME%%RED%O ³%GOLD%Steel Shade %RED%O%CONTINUE%
 ItemDisplay[!ID UNI usk]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Andariel's Visage %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI uh9]:%NAME%%RED%O ³%GOLD%Giant Skull or Overlord's Helm %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uh9 !(MAPID=137)]:%NAME%%RED%O ³%GOLD%Giant Skull %RED%O%CONTINUE%
 ItemDisplay[!ID UNI uhm]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Veil of Steel or Nightwing's Veil %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI urn]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Crown of Ages %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI ci3]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Griffon's Eye %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI uhl]:%NAME%%RED%O ³%GOLD%Sage's Defiance %RED%O%CONTINUE%
 ///////
 //Set Normal Chests
 ItemDisplay[!ID SET qui]:%NAME%¹Arctic chest%CONTINUE%
