@@ -3589,7 +3589,7 @@ ItemDisplay[(whm OR mau OR gma OR 9wh OR 9m9 OR 9gm OR 7wh OR 7m7 OR 7gm) SOCK=4
 //Weapons 5soc
 ItemDisplay[WEAPON SOCK=5 NMAG !RW]: %NAME%{%NL%%GRAY%Call to Arms%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[(BOW OR XBOW) SOCK=5 NMAG !RW]: %NAME%{%NL%%GRAY%Call to Arms, Mist, Zenith%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
-ItemDisplay[WEAPON !(BOW OR XBOW OR SOR) SOCK=5 NMAG !RW]: %NAME%{%NL%%GRAY%Call to Arms, Eternity, Honor%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
+ItemDisplay[WEAPON !(BOW OR XBOW OR SOR) SOCK=5 NMAG !RW]: %NAME%{%NL%%GRAY%Eternity, Honor%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[STAFF SOCK=5 NMAG !RW]: %NAME%{%NL%%GRAY%Doom, Eternity, Honor, Zenith%CL%Beast, Call to Arms, Destruction,%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[SCEPTER SOCK=5 NMAG !RW]: %NAME%{%NL%%GRAY%Call to Arms, Doom, Eternity, Honor%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Beast,}%CONTINUE%
 ItemDisplay[(whm OR mau OR gma OR 9wh OR 9m9 OR 9gm OR 7wh OR 7m7 OR 7gm) SOCK=5 NMAG !RW]: %NAME%{%NL%%GRAY% Eternity, Honor, Obedience%CL%Beast, Call to Arms, Doom,%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
