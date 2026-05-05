@@ -1933,7 +1933,7 @@ ItemDisplay[!WEAPON !QUIVER !rune6_i !rrorb_i !pcurrency_i !p_ess_i !pemap_i !ps
 /~~~//kryzard descriptions
 /~~~//Charms
 
-ItemDisplay[(RARE OR MAG) !(t123map_i OR t4map_i OR t5map_i OR jew)]:%NAME%{%WHITE%Ilvl:%ILVL%|Alvl:%ALVL%|Clvl:%CRAFTALVL%%CL%%NAME%}%CONTINUE%
+ItemDisplay[(RARE OR MAG) !(t123map_i OR t4map_i OR t5map_i OR jew)]:%NAME%{%CL%%WHITE%Ilvl:%ILVL%|Alvl:%ALVL%|Clvl:%CRAFTALVL%%CL%%NAME%}%CONTINUE%
 //Notes on Charms
 //ItemDisplay[cm2 UNI]:%NAME%{%TAN%Note%WHITE%: Cube with %GRAY%key %WHITE%to Destroy Into: %ORANGE%Hellfire Ashes%CL%%NAME%}%CONTINUE%
 ItemDisplay[(cm1 OR cm2 OR (cm3 ILVL=90))  MAG ID ILVL>89]:%NAME%{%TAN%Note%WHITE%: Ilvl%TEAL%90+ %BLUE%Charm %WHITE%Always Roll 2 Affixes,%CL%%NAME%}%CONTINUE%
@@ -3389,13 +3389,13 @@ ItemDisplay[(BOW OR XBOW) (MAG OR RARE) H_ED_A5]:%NAME%{%CL%%BLUE%*%YELLOW%*%RED
 //bow xbow craft
 ItemDisplay[(BOW OR XBOW) (CRAFT) H_ED_A6]:%NAME%{%CL%%BLUE%*%YELLOW%*%RED%*%PURPLE%High ED%PURPLE%%BLUE%*%YELLOW%*%RED%*%NAME%}%CONTINUE%
 
-ItemDisplay[WEAPON RARE ID ED>399]:%PURPLE%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[WEAPON RARE ID ED>299 ED<400]:%YELLOW%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[WEAPON RARE ID ED>199 ED<300]:%WHITE%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[WEAPON RARE ID ED>0 ED<200]:%GRAY%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON RARE ID ED>399]:%CL%%PURPLE%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON RARE ID ED>299 ED<400]:%CL%%YELLOW%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON RARE ID ED>199 ED<300]:%CL%%WHITE%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON RARE ID ED>0 ED<200]:%CL%%GRAY%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[HELM RARE ID EDAM>0]:%YELLOW%%EDAM%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[CHEST RARE ID EDAM>0]:%YELLOW%%EDAM%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[HELM RARE ID EDAM>0]:%CL%%YELLOW%%EDAM%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[CHEST RARE ID EDAM>0]:%CL%%YELLOW%%EDAM%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
 
 ItemDisplay[t21 NMAG]:%NAME%{%WHITE%Immunes:%RED%120% %GREEN%120%%CL%%NAME%}%CONTINUE%
 ItemDisplay[t21 MAG]:%NAME%{%WHITE%Immunes:%RED%120% %GREEN%120%%CL%%NAME%}%CONTINUE%
@@ -3741,10 +3741,11 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 			ItemDisplay[NMAG DAGGER !THROWING SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG DAGGER !THROWING !(9kr OR 7kr) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			//throwing knife
-			ItemDisplay[NMAG THROWING DAGGER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
-			
+			ItemDisplay[NMAG THROWING DAGGER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://				
 			ItemDisplay[NMAG THROWING DAGGER ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG THROWING DAGGER ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://				
+			ItemDisplay[NMAG THROWING DAGGER ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
+			ItemDisplay[NMAG THROWING DAGGER ELT !SUP ETH FILTLVL>6 !town_l GROUND]://
+				
 			//throwing axe
 			ItemDisplay[NMAG THROWING AXE (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			
@@ -3880,7 +3881,7 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 				
 		ItemDisplay[!ID MAG rin (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
 		ItemDisplay[!ID MAG amu !ILVL>89 FILTLVL>6 !town_l GROUND]://
-		ItemDisplay[!ID MAG QUIVER FILTLVL>6 !town_l GROUND]://
+		ItemDisplay[!ID MAG QUIVER (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
 		ItemDisplay[!ID MAG GLOVES FILTLVL>4 !town_l GROUND]://
 	\~~~	
 	
@@ -3998,3 +3999,4 @@ ItemDisplay[ETH !ID MAG]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//eth Mag items
 
 ItemDisplay[7cr2 UNI]:%GOLD%Armageddon's Blade{%NAME%}
 ItemDisplay[7cr2 RARE]:%NAME%{%NAME%}
+
