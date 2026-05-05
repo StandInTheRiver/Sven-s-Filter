@@ -761,8 +761,8 @@ ItemDisplay[zod_i]:%WHITE%O  %GRAY%O  %BLACK%O  %WHITE%O  %GRAY%O  %BLACK%O %NAM
 /~~~//Maps
 //not town
 ItemDisplay[t1map_i !town_l GROUND]:%ORANGE%- Tier %YELLOW%1%ORANGE% Map -%CONTINUE%
-ItemDisplay[t2map_i !town_l GROUND]:%ORANGE%- Tier %PURPLE%2 %ORANGE%Map -%CONTINUE%
-ItemDisplay[t3map_i !t35 !town_l GROUND]:%ORANGE%- Tier %RED%3 %ORANGE%Map -%CONTINUE%
+ItemDisplay[t2map_i !town_l GROUND]:%ORANGE%- Tier %PURPLE%2%ORANGE% Map -%CONTINUE%
+ItemDisplay[t3map_i !t35 !town_l GROUND]:%ORANGE%- Tier %RED%3%ORANGE% Map -%CONTINUE%
 ItemDisplay[t35 !town_l GROUND]:%PURPLE%O Blood Moon Map O%CONTINUE%//0.1	
 //town
 ItemDisplay[NMAG t123map_i (town_l OR !GROUND)]:%WHITE%%BASENAME%%CONTINUE%
@@ -3973,12 +3973,13 @@ ItemDisplay[t123map_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//maps
 
 ItemDisplay[quest_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//maps
 ItemDisplay[rrorb_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//maps
-ItemDisplay[misc_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//maps
 ItemDisplay[pemap_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//purple Items
 ItemDisplay[psock_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//purple Items
 ItemDisplay[rsock_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
 ItemDisplay[pcurrency_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
 ItemDisplay[rcurrency_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
+
+
 ItemDisplay[rcurrency2_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
 ItemDisplay[rainbow1_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//gg Items
 ItemDisplay[rainbow2_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items//gg Items
