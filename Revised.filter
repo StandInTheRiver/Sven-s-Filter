@@ -4150,11 +4150,11 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 
 			
 		//bad crafting bases magic
-		ItemDisplay[!ID RARE HELM !DRU !BAR FILTLVL>8 !town_l GROUND]://
-		ItemDisplay[!ID RARE (DRU OR BAR) FILTLVL>8 !town_l GROUND]://	
-		ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>8 !town_l GROUND]://
-		ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]://	
-		ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]://
+		//ItemDisplay[!ID RARE HELM !DRU !BAR FILTLVL>8 !town_l GROUND]://
+		//ItemDisplay[!ID RARE (DRU OR BAR) FILTLVL>8 !town_l GROUND]://	
+		//ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>8 !town_l GROUND]://
+		//ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]://	
+		//ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]://
 		ItemDisplay[!ID RARE (WAND OR NEC) FILTLVL>6 !town_l GROUND]://
 		ItemDisplay[!ID RARE (good_fast_rare_1haxe OR good_slow_rare_1haxe) !town_l GROUND FILTLVL>6]://
 		
