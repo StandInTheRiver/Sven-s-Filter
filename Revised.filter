@@ -249,14 +249,14 @@ Alias[good_rw_pshield]:((ELT DIN (SOCK=4 OR SOCK=3 OR SOCK=0)))
 Alias[good_rare_pshield]:DIN
 //shields
 Alias[bad_rw_shield]:(buc OR sml OR lrg OR spk OR kit OR bsh OR xuc OR xml OR xrg OR xpk OR xit OR uuc OR uml OR urg OR upk OR ush OR tow OR gts OR xow OR xts)
-Alias[bad_rare_shield]:(buc OR sml OR lrg OR spk OR bsh OR xuc OR xml OR xrg OR xpk OR uuc OR uml OR urg OR upk OR ush)
+//Alias[bad_rare_shield]:
 Alias[good_rw_shield]:((uts (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uow (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uit (SOCK=4 OR SOCK=3 OR SOCK=0)))
-Alias[good_rare_shield]:(gts OR xts OR uts OR uow OR xow OR tow OR kit OR xit OR uit)
+Alias[good_rare_shield]:SHIELD
 //helm
 Alias[bad_rw_helm]:(cap OR skp OR hlm OR fhl OR msk OR bhm OR ghm OR crn OR xap OR xkp OR xlm OR xhl OR xsk OR xh9 OR xhm OR xrn OR uap OR ukp OR hlm)
-Alias[bad_rare_helm]:(cap OR skp OR hlm OR fhl OR xap OR xkp OR xlm OR xhl OR uap OR ukp OR hlm OR uhl)
+//Alias[bad_rare_helm]:
 Alias[good_rw_helm]:(usk OR uh9 OR uhm OR urn)
-Alias[good_rare_helm]:(msk OR bhm OR ghm OR crn OR xrn OR xhm OR xh9 OR xsk OR urn OR uhm OR uh9 OR usk)
+Alias[good_rare_helm]: HELM
 //chest
 Alias[bad_rw_chest]:(qui OR lea OR hla OR stu OR rng OR scl OR chn OR brs OR spl OR plt OR fld OR gth OR ltp OR ful OR aar OR xul OR xea OR xla OR xtu OR xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xth OR xtp OR xul OR xar)
 Alias[good_rw_chest]:(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR utp OR uul OR uar)
